@@ -1,0 +1,19 @@
+import java.util.*;
+public class alpabetical {
+    public static void main(String[] args) {
+        String s = "welcome to sirius india team";
+        String ans = sortString(s);
+        System.out.println(ans);
+    }
+
+    static String sortString(String s) {
+        String str[] = s.split(" ");
+        Arrays.sort(str);
+
+        String res = "";
+        for (String st : str) {
+            res += st + " ";
+        }
+        return res;
+    }
+}
